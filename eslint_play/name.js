@@ -4,3 +4,7 @@ function greet() {
 }
 
 greet();
+
+
+let sum = x =>  {x + 2;};
+sum(2);

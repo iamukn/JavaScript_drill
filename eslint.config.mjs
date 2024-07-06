@@ -11,6 +11,7 @@ export default [
       "no-console": 1, // Disallow use of `console` in production
       "semi": ["error", "always"], // Enforce semicolons at the end of statements
       "indent": ['warn', 2],
+      "arrow-body-style": ['error', 'always']
     },
   },
 ];
