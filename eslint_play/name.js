@@ -15,3 +15,6 @@ const add = (x, y) => {
 };
 add();
 
+name = undefined;
+
+newName = name ?? "Ukn";
