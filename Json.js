@@ -4,7 +4,17 @@ let user = {
   roles: {
     isAdmin: false,
     isEditor: true
+  },
+  toString () {
+    return this.age
   }
 };
 
-console.log(JSON.stringify(user, null, 4));
+jsonData = JSON.stringify(user);
+
+console.log(jsonData);
+console.log(typeof jsonData);
+
+obj = JSON.parse(jsonData);
+console.log(obj);
+console.log(typeof obj);
