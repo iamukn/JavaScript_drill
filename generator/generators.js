@@ -5,7 +5,7 @@
  * The can be created using the syntax function* func(){} or function *func() {}
  */
 
-function* mathCalc(args) {
+function *mathCalc(args) {
     yield args + 2;
     yield args * 2;
     yield args - 2;
@@ -13,11 +13,17 @@ function* mathCalc(args) {
     return args ** 2;
 }
 
+function* generate() {
+ yield(2);
+ yield(3);
+ return(4);
+}
+
+console.log([...generate()])
 
 let result = mathCalc(2);
 let next = 0;
 // accessing every member of the return value
-
 while(true)  {
   next = result.next();
   if (next.done) {
